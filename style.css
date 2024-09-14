@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: left;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.course-code {
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    position: relative;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-bottom: 5px;
+    position: relative;
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* 添加平滑过渡效果 */
+}
+
+nav ul li a:hover {
+    color: #85c1e9; /* 更淡的蓝色 */
+}
+
+nav ul li a:hover::after {
+    content: ''; /* 使用伪元素生成横线 */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; /* 让横线靠近黑色背景板底部 */
+    height: 2px;
+    background-color: #85c1e9; /* 与hover颜色匹配的淡蓝色 */
+    transition: background-color 0.3s ease;
+}
+
+/* 样式变化：为 active 类的链接设置蓝色字体和蓝色横线 */
+nav ul li a.active {
+    color: #85c1e9; /* 蓝色字体 */
+}
+
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; /* 横线下移 */
+    height: 2px;
+    background-color: #85c1e9; /* 蓝色横线 */
+}
+
+/* 确保链接在 hover 状态时保持颜色 */
+nav ul li a.active:hover {
+    color: #85c1e9;
+}
+
+section {
+    padding: 20px;
+    background-color: #e0e0e0; /* 灰色背景 */
+    border-radius: 8px; /* 圆角矩形 */
+    margin: 20px auto; /* 自动水平居中 */
+    max-width: 1200px; /* 可选：设置最大宽度 */
+}
+
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.8em; /* 增大字体 */
+}
+h21 {
+    margin-top: 0;
+    text-align: center;
+    font-size: 1.8em; /* 增大字体 */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* 添加一些间距 */
+}
+
+.profile-image img {
+    width: 220px; /* 控制头像大小 */
+    height: 220px;
+    /* border-radius: 50%; 使头像变为圆形 */
+    margin-left: 50px;
+    margin-right: 80px; /* 头像和个人信息之间的间距 */
+}
+
+.profile-details {
+    text-align: left; /* 使个人信息靠左对齐 */
+    font-size: 1.2em; /* 增大字体 */
+}
+
+.profile-details p {
+    margin: 20px 0; /* 调整每个字段之间的间距 */
+}
+
+/* Assignments page */
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555;
+}
+
+/* GitHub 链接样式 */
+.github-link {
+    display: inline-block;
+    background-color: #90caf9; /* 淡蓝色背景 */
+    color: #000; /* 黑色字体 */
+    font-weight: bold; /* 加粗字体 */
+    text-decoration: none; /* 去掉下划线 */
+    padding: 10px 15px; /* 内边距，增加点击区域 */
+    border-radius: 8px; /* 圆角矩形 */
+}
+
+.github-link:hover {
+    background-color: #42a5f5; /* 鼠标悬停时，背景变深一点 */
+    color: #000; /* 保持黑色字体 */
+    text-decoration: underline; /* 鼠标悬停时添加下划线 */
+}
